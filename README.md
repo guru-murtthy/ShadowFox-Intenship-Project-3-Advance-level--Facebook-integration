@@ -11,7 +11,7 @@
 </div>
 
 <h1 align="center">
-  <img src="https://img.icons8.com/fluency/48/facebook-new.png" width="36" height="36"/>
+  <img src="https://img.icons8.com/color/48/facebook-new.png" width="36" height="36"/>
   Facebook OAuth 2.0 & Graph API 
   <br/>
   <sub>Android SDK Integration — Advanced Level</sub>
@@ -87,16 +87,16 @@
     </tr>
     <tr>
       <td>
-        <img src="https://via.placeholder.com/180x360/0F172A/6366F1?text=Splash+Screen" width="180" alt="Splash Screen"/>
+        <img src="https://placehold.co/180x360/0F172A/6366F1?text=Splash" width="180" alt="Splash Screen"/>
       </td>
       <td>
-        <img src="https://via.placeholder.com/180x360/0F172A/6366F1?text=Login+Screen" width="180" alt="Login Screen"/>
+        <img src="https://placehold.co/180x360/0F172A/6366F1?text=Login" width="180" alt="Login Screen"/>
       </td>
       <td>
-        <img src="https://via.placeholder.com/180x360/0F172A/6366F1?text=Profile+Screen" width="180" alt="Profile Screen"/>
+        <img src="https://placehold.co/180x360/0F172A/6366F1?text=Profile" width="180" alt="Profile Screen"/>
       </td>
       <td>
-        <img src="https://via.placeholder.com/180x360/0F172A/6366F1?text=Share+Screen" width="180" alt="Share Composer"/>
+        <img src="https://placehold.co/180x360/0F172A/6366F1?text=Share" width="180" alt="Share Composer"/>
       </td>
     </tr>
     <tr>
