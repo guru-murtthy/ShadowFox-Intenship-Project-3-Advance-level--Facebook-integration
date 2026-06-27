@@ -26,6 +26,5 @@ Thumbs.db
 .idea/navigation
 
 # Output artifacts
-*.apk
 *.aar
 *.ap_

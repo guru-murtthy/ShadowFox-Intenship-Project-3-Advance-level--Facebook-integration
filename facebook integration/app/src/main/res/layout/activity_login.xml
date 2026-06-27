@@ -10,7 +10,7 @@
 
     <!-- Header Section -->
     <TextView
-        id="@+id/tvLoginTitle"
+        android:id="@+id/tvLoginTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        id="@+id/tvLoginSubtitle"
+        android:id="@+id/tvLoginSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -37,7 +37,7 @@
 
     <!-- Main Card - Login Options -->
     <com.google.android.material.card.MaterialCardView
-        id="@+id/cardLogin"
+        android:id="@+id/cardLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -59,7 +59,7 @@
 
             <!-- Facebook SDK Native LoginButton -->
             <com.facebook.login.widget.LoginButton
-                id="@+id/btnFacebookLogin"
+                android:id="@+id/btnFacebookLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -83,7 +83,7 @@
 
     <!-- Educational Section - OAuth 2.0 Handshake explanation -->
     <com.google.android.material.card.MaterialCardView
-        id="@+id/cardOauthInfo"
+        android:id="@+id/cardOauthInfo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="24dp"

@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState: Bundle?)
+        super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
      */
     private fun setupFacebookLogin() {
         // Define scopes to request
-        binding.btnFacebookLogin.setPermissions(listOf("public_profile", "email"))
+        binding.btnFacebookLogin.setPermissions("public_profile", "email")
 
         // Register authentication result handler callbacks
         binding.btnFacebookLogin.registerCallback(callbackManager, object : FacebookCallback<LoginResult> {

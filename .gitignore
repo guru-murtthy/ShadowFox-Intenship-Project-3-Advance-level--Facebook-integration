@@ -19,6 +19,7 @@ captures/
 
 # Built artifacts
 *.apk
+!releases/*.apk
 *.ap_
 *.dex
 *.class

@@ -10,7 +10,7 @@
 
     <!-- Header Title -->
     <TextView
-        id="@+id/tvShareHeader"
+        android:id="@+id/tvShareHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -25,7 +25,7 @@
 
     <!-- Subtitle description of intent sharing -->
     <TextView
-        id="@+id/tvShareSubtitle"
+        android:id="@+id/tvShareSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -38,7 +38,7 @@
 
     <!-- Main Composer Card -->
     <com.google.android.material.card.MaterialCardView
-        id="@+id/cardComposer"
+        android:id="@+id/cardComposer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -59,7 +59,7 @@
 
             <!-- Composer input box -->
             <com.google.android.material.textfield.TextInputLayout
-                id="@+id/tilShareInput"
+                android:id="@+id/tilShareInput"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                 app:counterTextColor="@color/text_secondary">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    id="@+id/etShareInput"
+                    android:id="@+id/etShareInput"
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     android:gravity="top|start"
@@ -98,7 +98,7 @@
 
         <!-- Share Action Button -->
         <com.google.android.material.button.MaterialButton
-            id="@+id/btnSubmitShare"
+            android:id="@+id/btnSubmitShare"
             style="@style/Widget.Material3.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
 
         <!-- Cancel Link Button -->
         <com.google.android.material.button.MaterialButton
-            id="@+id/btnCancelShare"
+            android:id="@+id/btnCancelShare"
             style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

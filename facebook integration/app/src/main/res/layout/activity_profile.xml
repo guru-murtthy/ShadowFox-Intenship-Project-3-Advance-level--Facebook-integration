@@ -9,7 +9,7 @@
 
     <!-- Loading Indicator -->
     <com.google.android.material.progressindicator.CircularProgressIndicator
-        id="@+id/progressProfile"
+        android:id="@+id/progressProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:indeterminate="true"
@@ -22,7 +22,7 @@
 
     <!-- Main Content Scroll Container -->
     <ScrollView
-        id="@+id/scrollProfileContent"
+        android:id="@+id/scrollProfileContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -47,7 +47,7 @@
 
             <!-- Graceful Fallback Warning Banner (Shows ONLY when email permission is denied) -->
             <com.google.android.material.card.MaterialCardView
-                id="@+id/cardEmailWarning"
+                android:id="@+id/cardEmailWarning"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -82,7 +82,7 @@
                         android:lineSpacingMultiplier="1.2" />
 
                     <com.google.android.material.button.MaterialButton
-                        id="@+id/btnRequestEmailPermission"
+                        android:id="@+id/btnRequestEmailPermission"
                         style="@style/Widget.Material3.Button.TextButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
 
             <!-- Profile Info Card -->
             <com.google.android.material.card.MaterialCardView
-                id="@+id/cardProfileInfo"
+                android:id="@+id/cardProfileInfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
@@ -124,7 +124,7 @@
                         app:cardBackgroundColor="@color/surface_variant">
 
                         <ImageView
-                            id="@+id/imgProfilePicture"
+                            android:id="@+id/imgProfilePicture"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:scaleType="centerCrop"
@@ -135,7 +135,7 @@
 
                     <!-- User Name -->
                     <TextView
-                        id="@+id/tvProfileName"
+                        android:id="@+id/tvProfileName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
@@ -147,7 +147,7 @@
 
                     <!-- User Email (or fallback placeholder) -->
                     <TextView
-                        id="@+id/tvProfileEmail"
+                        android:id="@+id/tvProfileEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -158,7 +158,7 @@
 
                     <!-- Profile URL Link -->
                     <TextView
-                        id="@+id/tvProfileLink"
+                        android:id="@+id/tvProfileLink"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
@@ -194,7 +194,7 @@
                                 android:letterSpacing="0.1" />
 
                             <TextView
-                                id="@+id/tvMemberSince"
+                                android:id="@+id/tvMemberSince"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
@@ -226,7 +226,7 @@
                                 android:letterSpacing="0.1" />
 
                             <TextView
-                                id="@+id/tvPostsCount"
+                                android:id="@+id/tvPostsCount"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
@@ -242,7 +242,7 @@
 
             <!-- Action Buttons -->
             <com.google.android.material.button.MaterialButton
-                id="@+id/btnShareContent"
+                android:id="@+id/btnShareContent"
                 style="@style/Widget.Material3.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -253,7 +253,7 @@
                 app:icon="@android:drawable/ic_menu_share" />
 
             <com.google.android.material.button.MaterialButton
-                id="@+id/btnLogout"
+                android:id="@+id/btnLogout"
                 style="@style/Widget.Material3.Button.OutlinedButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

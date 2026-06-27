@@ -40,7 +40,7 @@ class LoginViewModel(private val repository: ProfileRepository) : ViewModel() {
             repository.saveSessionToken(accessToken.token)
             
             // Check if any scopes (e.g. email) were declined by the user
-            val declined = accessToken.declinedPermissions ?: emptySet()
+            val declined = accessToken.declinedPermissions?.toSet() ?: emptySet()
             _loginState.value = LoginState.Success(accessToken.token, declined)
         } catch (e: Exception) {
             _loginState.value = LoginState.Error("Session encryption failure: ${e.localizedMessage}")
