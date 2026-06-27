@@ -87,16 +87,16 @@
     </tr>
     <tr>
       <td>
-        <img src="https://placehold.co/180x360/0F172A/6366F1?text=Splash" width="180" alt="Splash Screen"/>
+        <img src="screenshots/splash_screen.png" width="180" alt="Splash Screen"/>
       </td>
       <td>
-        <img src="https://placehold.co/180x360/0F172A/6366F1?text=Login" width="180" alt="Login Screen"/>
+        <img src="screenshots/login_screen.png" width="180" alt="Login Screen"/>
       </td>
       <td>
-        <img src="https://placehold.co/180x360/0F172A/6366F1?text=Profile" width="180" alt="Profile Screen"/>
+        <img src="screenshots/profile_screen.png" width="180" alt="Profile Screen"/>
       </td>
       <td>
-        <img src="https://placehold.co/180x360/0F172A/6366F1?text=Share" width="180" alt="Share Composer"/>
+        <img src="screenshots/share_composer.png" width="180" alt="Share Composer"/>
       </td>
     </tr>
     <tr>
