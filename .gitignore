@@ -1,30 +1,30 @@
-# Gradle files
-.gradle/
-build/
-app/build/
+# Built-in Gradle/Android Studio ignores
+.gradle
+/build
+/*/build
+*.iml
+.idea
 
-# Local configuration files
+# Local environment configuration (contains sensitive Facebook App ID & Client Token)
 local.properties
+
+# OS/System files
+.DS_Store
+Thumbs.db
 
 # Log files
 *.log
 
-# Android Studio local files
-.idea/
-*.iml
-.navigation/
-captures/
-.cxx/
-.externalNativeBuild/
+# Android Studio local config
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/navigation
 
-# Built artifacts
-*.apk
-!releases/*.apk
-*.ap_
-*.dex
-*.class
+# Output artifacts
 *.aar
-
-# OS Files
-.DS_Store
-Thumbs.db
+*.ap_
