@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FacebookIntegration" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary Brand Colors -->
+        <item name="colorPrimary">@color/primary_indigo</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_dark_indigo</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        
+        <!-- Secondary / Accent Colors -->
+        <item name="colorSecondary">@color/secondary_rose</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Background and Surface Colors -->
+        <item name="android:windowBackground">@color/background_slate</item>
+        <item name="colorSurface">@color/surface_slate</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <!-- Status & Navigation Bar Aesthetics -->
+        <item name="android:statusBarColor">@color/background_slate</item>
+        <item name="android:navigationBarColor">@color/background_slate</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <!-- Fullscreen Splash Activity theme -->
+    <style name="Theme.FacebookIntegration.Splash" parent="Theme.FacebookIntegration">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

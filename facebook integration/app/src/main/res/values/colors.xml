@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand & Accent Colors -->
+    <color name="primary_indigo">#6366F1</color>      <!-- Modern Indigo -->
+    <color name="primary_dark_indigo">#4F46E5</color> <!-- Darker Indigo -->
+    <color name="secondary_rose">#EC4899</color>     <!-- Modern Pink/Rose -->
+    <color name="facebook_blue">#1877F2</color>      <!-- Facebook Brand Blue -->
+    <color name="facebook_blue_dark">#0F5AC2</color> <!-- Facebook Brand Dark Blue -->
+
+    <!-- Theme Neutral Colors -->
+    <color name="background_slate">#0F172A</color>   <!-- Very dark slate background -->
+    <color name="surface_slate">#1E293B</color>      <!-- Slightly lighter slate for cards -->
+    <color name="surface_variant">#334155</color>    <!-- Border/divider Slate -->
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#F8FAFC</color>       <!-- Off-white text -->
+    <color name="text_secondary">#94A3B8</color>     <!-- Muted gray-blue text -->
+    <color name="text_disabled">#475569</color>      <!-- Slate gray disabled text -->
+    
+    <!-- Utility Colors -->
+    <color name="error_red">#EF4444</color>          <!-- Vivid Red -->
+    <color name="success_green">#10B981</color>      <!-- Soft Mint Green -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Glassmorphism overlays -->
+    <color name="glass_white_low">#1AFFFFFF</color>  <!-- 10% white for glass card look -->
+    <color name="glass_white_mid">#33FFFFFF</color>  <!-- 20% white -->
+</resources>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Mentor FB Auth</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_welcome">Initializing Secure Session...</string>
+    <string name="splash_mentor_text">OAuth 2.0 &amp; Facebook Graph API Mentorship App</string>
+    
+    <!-- Login Screen -->
+    <string name="login_title">Welcome to Facebook OAuth 2.0</string>
+    <string name="login_subtitle">Learn and implement standard secure flows using Meta SDKs</string>
+    <string name="login_btn_text">Continue with Facebook</string>
+    <string name="login_learn_oauth">Learn about OAuth 2.0 Handshake</string>
+    <string name="error_auth_failed">Authentication failed: %s</string>
+    <string name="error_auth_canceled">Login was canceled by user.</string>
+    
+    <!-- Profile Screen -->
+    <string name="profile_title">Graph API User Profile</string>
+    <string name="profile_member_since">Member Since: %s</string>
+    <string name="profile_posts_count">App Posts Shared: %d</string>
+    <string name="profile_btn_share">Share to Wall</string>
+    <string name="profile_btn_logout">Logout</string>
+    <string name="profile_email_fallback">Email: [Not Provided - Permission Denied]</string>
+    <string name="profile_email_label">Email: %s</string>
+    <string name="profile_link_label">Profile Link: %s</string>
+    <string name="profile_member_date_default">June 2026</string>
+    
+    <!-- Share Screen -->
+    <string name="share_title">Compose Post</string>
+    <string name="share_input_hint">What\'s on your mind? Share to Facebook...</string>
+    <string name="share_btn_submit">Post to Facebook</string>
+    <string name="share_btn_cancel">Cancel</string>
+    <string name="share_success">Content successfully shared on Facebook!</string>
+    <string name="share_error">Failed to share content: %s</string>
+    <string name="share_canceled">Sharing was canceled.</string>
+    <string name="share_input_empty_error">Please enter some text or link to share.</string>
+    
+    <!-- Permission Denial Flow -->
+    <string name="permission_denied_title">Email Permission Recommended</string>
+    <string name="permission_denied_message">This app requests your email address to provide a complete profile. You can continue with a fallback profile, or grant the permission now.</string>
+    <string name="permission_grant_now">Grant Permission</string>
+    <string name="permission_continue_without">Continue without Email</string>
+</resources>

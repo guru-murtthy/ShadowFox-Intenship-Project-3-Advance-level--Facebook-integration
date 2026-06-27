@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_slate"
+    android:padding="24dp"
+    tools:context=".ui.share.ShareActivity">
+
+    <!-- Header Title -->
+    <TextView
+        id="@+id/tvShareHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/share_title"
+        android:textColor="@color/text_primary"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Subtitle description of intent sharing -->
+    <TextView
+        id="@+id/tvShareSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="We use Facebook\'s ShareDialog. If the Facebook app is installed, this will launch a native composer; otherwise, it opens a secure web portal."
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvShareHeader" />
+
+    <!-- Main Composer Card -->
+    <com.google.android.material.card.MaterialCardView
+        id="@+id/cardComposer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/surface_slate"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/surface_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvShareSubtitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Composer input box -->
+            <com.google.android.material.textfield.TextInputLayout
+                id="@+id/tilShareInput"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/primary_indigo"
+                app:hintTextColor="@color/primary_indigo"
+                app:placeholderText="Enter links, quotes, or thoughts to share..."
+                app:placeholderTextColor="@color/text_secondary"
+                app:counterEnabled="true"
+                app:counterMaxLength="250"
+                app:counterTextColor="@color/text_secondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    id="@+id/etShareInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:lineSpacingMultiplier="1.2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Action Action Buttons Stack -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardComposer">
+
+        <!-- Share Action Button -->
+        <com.google.android.material.button.MaterialButton
+            id="@+id/btnSubmitShare"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_btn_submit"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/primary_indigo"
+            app:icon="@android:drawable/ic_menu_share" />
+
+        <!-- Cancel Link Button -->
+        <com.google.android.material.button.MaterialButton
+            id="@+id/btnCancelShare"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/share_btn_cancel"
+            android:textColor="@color/text_secondary" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

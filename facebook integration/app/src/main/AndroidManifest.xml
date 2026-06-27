@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Network state is required to communicate with Facebook Graph API and OAuth endpoints -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Queries tag ensures Android 11+ package visibility for the Facebook App and Custom Tabs -->
+    <queries>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FacebookIntegration">
+
+        <!-- Facebook Metadata Configured dynamically via build.gradle.kts placeholders -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="${facebookAppId}" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="${facebookClientToken}" />
+
+        <!-- Launcher Activity: Route the user based on active session -->
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FacebookIntegration.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login flow activity -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- User profile display and Graph API content loading -->
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false" />
+
+        <!-- Facebook composer and sharing options -->
+        <activity
+            android:name=".ui.share.ShareActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Facebook Core Activities needed by the SDK -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <!-- Handles Custom Tab callbacks for external OAuth redirects -->
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${facebookLoginScheme}" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
